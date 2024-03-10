@@ -1,0 +1,10 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;;
+}
