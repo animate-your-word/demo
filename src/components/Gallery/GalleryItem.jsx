@@ -25,7 +25,7 @@ const GalleryItem = ({ data }) => {
         })}
       </div>
       <img
-        src={`/gallery/${file}?${random}`}
+        src={`${import.meta.env.BASE_URL}gallery/${file}?${random}`}
         alt={word}
         onClick={togglePlay}
         autoPlay={true}
