@@ -1,26 +1,128 @@
 [
-{"file":"M-romantic/romantic.gif","word":"ROMANTIC" ,"optimized_letter":"M","caption":"A couple is walking hand in hand, with the girl following the boy"},
-{"file":"N-passion/passion.gif","word":"PASSION" ,"optimized_letter":"N","caption":"Two people kiss each other, one holding the others chin with his hand"}
-{"file":"F-fire/fire.gif","word":"FIRE" ,"optimized_letter":"F","caption":"Two soldiers are firing their guns, one standing and one crouching"},
-{"file":"M-camel/camel.gif","word":"CAMEL","optimized_letter":"M","caption":"A camel walks steadily across the desert"},
-{"file":"P-telescope/telescope.gif","word":"TELESCOPE","optimized_letter":"P","caption":"A hand holding a monocular telescope turns towards the camera"},
-  {"file":"K-knight/knight.gif","word":"KNIGHT" ,"optimized_letter":"K","caption":"A knight draws his sword, pointing it forward, ready for battle"},
-{"file":"B-butterfly/butterfly.gif","word":"BUTTERFLY","optimized_letter":"B","caption":"A butterfly is flying sideways and waves its two wings"},
-  {"file":"D-dangerous/dangerous.gif","word":"DANGEROUS","optimized_letter":"D","caption":"A dangerous monster opens its mouth, ready to swallow someone"},
-{"file":"G-goddess/goddess.gif","word":"GODDESS","optimized_letter":"G","caption":"A goddess sits leisurely at the tip of a crescent moon, swinging her legs"},
-{"file":"h-father/father.gif","word":"father","optimized_letter":"h","caption":"A tall father walks along the road, holding his little son with his hand"},
-  {"file":"S-swan/swan.gif","word":"SWAN","optimized_letter":"A","caption":"A fat swan is swimming elegantly and stretching its neck on the water"},
-
-  {"file":"H-harmony/harmony.gif","word":"HARMONY","optimized_letter":"H","caption":  "Two men shaking hands with each other in a friendly manner"},
-  {"file":"Y-gym/gym.gif","word":"GYM","optimized_letter":"Y","caption":  "A man doing exercise by lifting two dumbbells in both hands"},
-{"file":"O-love/love.gif","word":"LOVE","optimized_letter":"O","caption":"A large and a small hand together make a heart shape"},
-{"file":"E-jet/jet.gif","word":"JET","optimized_letter":"E","caption":"Three jet planes are flying in formation side by side."},
-{"file":"T-lift/lift.gif","word":"LIFT", "optimized_letter":"T","caption":"A man doing Dumbbell Lateral Raise"},
-
-{"file":"d-hide/hide.gif","word":"hide" ,"optimized_letter":"d","caption":"A child playing hide and seek peeks their head out from the side of a wall"},
-
-{"file":"Q-query/query.gif","word":"QUERY","optimized_letter":"Q","caption":"A hand holding a magnifying glass is searching around"},
-{"file":"V-victory/victory.gif","word":"VICTORY" ,"optimized_letter":"V","caption":"A man raises his arm and shouts in celebration of victory"},
-{"file":"L-leg/leg.gif","word":"LEG","optimized_letter":"L","caption":"A leg standing on the ground"},
-{"file":"J-jazz/jazz.gif","word":"JAZZ" ,"optimized_letter":"J","caption":"A pair of hands is playing the saxophone"},
+  {
+    "file": "M-romantic/romantic.gif",
+    "word": "ROMANTIC",
+    "optimized_letter": "M",
+    "caption": "A couple is walking hand in hand, with the girl following the boy"
+  },
+  {
+    "file": "N-passion/passion.gif",
+    "word": "PASSION",
+    "optimized_letter": "N",
+    "caption": "Two people kiss each other, one holding the others chin with his hand"
+  },
+  {
+    "file": "F-fire/fire.gif",
+    "word": "FIRE",
+    "optimized_letter": "F",
+    "caption": "Two soldiers are firing their guns, one standing and one crouching"
+  },
+  {
+    "file": "M-camel/camel.gif",
+    "word": "CAMEL",
+    "optimized_letter": "M",
+    "caption": "A camel walks steadily across the desert"
+  },
+  {
+    "file": "P-telescope/telescope.gif",
+    "word": "TELESCOPE",
+    "optimized_letter": "P",
+    "caption": "A hand holding a monocular telescope turns towards the camera"
+  },
+  {
+    "file": "K-knight/knight.gif",
+    "word": "KNIGHT",
+    "optimized_letter": "K",
+    "caption": "A knight draws his sword, pointing it forward, ready for battle"
+  },
+  {
+    "file": "B-butterfly/butterfly.gif",
+    "word": "BUTTERFLY",
+    "optimized_letter": "B",
+    "caption": "A butterfly is flying sideways and waves its two wings"
+  },
+  {
+    "file": "D-dangerous/dangerous.gif",
+    "word": "DANGEROUS",
+    "optimized_letter": "D",
+    "caption": "A dangerous monster opens its mouth, ready to swallow someone"
+  },
+  {
+    "file": "G-goddess/goddess.gif",
+    "word": "GODDESS",
+    "optimized_letter": "G",
+    "caption": "A goddess sits leisurely at the tip of a crescent moon, swinging her legs"
+  },
+  {
+    "file": "h-father/father.gif",
+    "word": "father",
+    "optimized_letter": "h",
+    "caption": "A tall father walks along the road, holding his little son with his hand"
+  },
+  {
+    "file": "S-swan/swan.gif",
+    "word": "SWAN",
+    "optimized_letter": "A",
+    "caption": "A fat swan is swimming elegantly and stretching its neck on the water"
+  },
+  {
+    "file": "H-harmony/harmony.gif",
+    "word": "HARMONY",
+    "optimized_letter": "H",
+    "caption": "Two men shaking hands with each other in a friendly manner"
+  },
+  {
+    "file": "Y-gym/gym.gif",
+    "word": "GYM",
+    "optimized_letter": "Y",
+    "caption": "A man doing exercise by lifting two dumbbells in both hands"
+  },
+  {
+    "file": "O-love/love.gif",
+    "word": "LOVE",
+    "optimized_letter": "O",
+    "caption": "A large and a small hand together make a heart shape"
+  },
+  {
+    "file": "E-jet/jet.gif",
+    "word": "JET",
+    "optimized_letter": "E",
+    "caption": "Three jet planes are flying in formation side by side."
+  },
+  {
+    "file": "T-lift/lift.gif",
+    "word": "LIFT",
+    "optimized_letter": "T",
+    "caption": "A man doing Dumbbell Lateral Raise"
+  },
+  {
+    "file": "d-hide/hide.gif",
+    "word": "hide",
+    "optimized_letter": "d",
+    "caption": "A child playing hide and seek peeks their head out from the side of a wall"
+  },
+  {
+    "file": "Q-query/query.gif",
+    "word": "QUERY",
+    "optimized_letter": "Q",
+    "caption": "A hand holding a magnifying glass is searching around"
+  },
+  {
+    "file": "V-victory/victory.gif",
+    "word": "VICTORY",
+    "optimized_letter": "V",
+    "caption": "A man raises his arm and shouts in celebration of victory"
+  },
+  {
+    "file": "L-leg/leg.gif",
+    "word": "LEG",
+    "optimized_letter": "L",
+    "caption": "A leg standing on the ground"
+  },
+  {
+    "file": "J-jazz/jazz.gif",
+    "word": "JAZZ",
+    "optimized_letter": "J",
+    "caption": "A pair of hands is playing the saxophone"
+  }
 ]
