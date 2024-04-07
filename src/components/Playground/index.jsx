@@ -91,6 +91,7 @@ const Generator = ({ selectedItem }) => {
             </Col>
             <Col lg={12} md={24}>
               <ColorPicker
+                disabledAlpha
                 showText
                 defaultValue="#000000"
                 onChangeComplete={(color) =>
@@ -105,6 +106,7 @@ const Generator = ({ selectedItem }) => {
             </Col>
             <Col lg={12} md={24}>
               <ColorPicker
+                disabledAlpha
                 showText
                 defaultValue="#000000"
                 onChangeComplete={(color) =>
@@ -122,6 +124,7 @@ const Generator = ({ selectedItem }) => {
             </Col>
             <Col lg={12} md={24}>
               <ColorPicker
+                disabledAlpha
                 showText
                 defaultValue="#000000"
                 onChangeComplete={(color) =>
