@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./index.css";
 import { svgToPng } from "./canvas";
 import { Col, Row, ColorPicker, Slider, Switch, Spin } from "antd";
-import * as Magick from "/magickApi.js";
 import PropTypes from "prop-types";
 
 const Generator = ({ selectedItem }) => {
