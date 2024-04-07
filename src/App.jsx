@@ -1,15 +1,16 @@
-import { useState } from "react";
 import Gallery from "./components/Gallery";
+import Playground from "./components/Playground";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [selectedGalleryItem, setSelectedGalleryItem] = useState(null);
 
   return (
     <>
       <div style={{ width: "80%", margin: "auto" }}>
-        
-        <Gallery />
+        <Gallery onSelectItem={setSelectedGalleryItem} />
+        <Playground selectedItem={selectedGalleryItem} />
       </div>
     </>
   );

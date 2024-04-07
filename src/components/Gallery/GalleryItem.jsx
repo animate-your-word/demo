@@ -1,11 +1,12 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const GalleryItem = ({ data }) => {
+const GalleryItem = ({ data, onSelectItem }) => {
   const { file, word, optimized_letter, caption } = data;
   const [random, setRandom] = useState(0);
 
   const togglePlay = () => {
+    onSelectItem(word);
     setRandom(Math.random());
   };
 
@@ -15,7 +16,7 @@ const GalleryItem = ({ data }) => {
         {word.split("").map((letter, idx) => {
           if (letter === optimized_letter) {
             return (
-              <span style={{ fontWeight: "bold"  }} key={idx}>
+              <span style={{ fontWeight: "bold" }} key={idx}>
                 {letter}
               </span>
             );
@@ -38,6 +39,7 @@ const GalleryItem = ({ data }) => {
 
 GalleryItem.propTypes = {
   data: PropTypes.object.isRequired,
+  onSelectItem: PropTypes.func.isRequired,
 };
 
 export default GalleryItem;
