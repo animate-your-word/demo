@@ -228,6 +228,25 @@ function App() {
 
         <br />
         <br />
+        <hr className="divider" />
+        <div className="content">
+          <div>
+            This website is licensed under a{" "}
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>
+            .
+          </div>
+          <br />
+          <div>
+            You are welcome to use the{" "}
+            <a href="https://github.com/animate-your-word/demo">source code</a>{" "}
+            of this website, but we kindly request that you provide a link back
+            to this page in the footer. Please remember to remove any analytics
+            code from the header that you do not wish to include on your own
+            website.
+          </div>
+        </div>
       </div>
     </>
   );

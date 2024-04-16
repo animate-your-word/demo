@@ -11,8 +11,9 @@
     margin: 0 0.5rem;
 }
 
-.authors div a {
+a {
     text-decoration: none;
+    color: #00b1d4;
 }
 
 .divider {
