@@ -183,7 +183,7 @@ function App() {
 
         <div className="content-wide">
           <h2 className="title">How does it work?</h2>
-          <Row>
+          <Row gutter={16}>
             <Col md={24} lg={8}>
               <img
                 src={`${import.meta.env.BASE_URL}images/bizier.png`}
