@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const Gallery = ({ onSelectItem }) => {
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Gallery</h2>
+      <h2 className="title">Gallery</h2>
       <div
         style={{ textAlign: "left", marginBottom: "1rem", fontStyle: "italic" }}
       >

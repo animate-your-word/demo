@@ -35,10 +35,10 @@ const Generator = ({ selectedItem }) => {
     setGeneratedImage(outSrc);
   }
 
-  const [fillStartColor, setFillStartColor] = useState("#000000");
-  const [fillEndColor, setFillEndColor] = useState("#000000");
+  const [fillStartColor, setFillStartColor] = useState("#FFB600");
+  const [fillEndColor, setFillEndColor] = useState("#FF9E00");
   const [strokeColor, setStrokeColor] = useState("#000000");
-  const [strokeWidth, setStrokeWidth] = useState(0);
+  const [strokeWidth, setStrokeWidth] = useState(2);
   const [strokeDashed, setStrokeDashed] = useState(false);
 
   useEffect(() => {
@@ -70,14 +70,13 @@ const Generator = ({ selectedItem }) => {
 
   return (
     <div style={{ marginBlock: "1rem" }}>
-      <h2 style={{ textAlign: "center" }}>Playground</h2>
+      <h2 className="title">Playground</h2>
       <Row
         align="middle"
         style={{
-          width: "70%",
           margin: "auto",
           padding: "1rem 2rem",
-          background: "#F3F3F3",
+          border: "2px solid gray",
           borderRadius: "1rem",
         }}
       >
@@ -93,7 +92,7 @@ const Generator = ({ selectedItem }) => {
               <ColorPicker
                 disabledAlpha
                 showText
-                defaultValue="#000000"
+                defaultValue={fillStartColor}
                 onChangeComplete={(color) =>
                   setFillStartColor(color.toHexString())
                 }
@@ -108,7 +107,7 @@ const Generator = ({ selectedItem }) => {
               <ColorPicker
                 disabledAlpha
                 showText
-                defaultValue="#000000"
+                defaultValue={fillEndColor}
                 onChangeComplete={(color) =>
                   setFillEndColor(color.toHexString())
                 }
@@ -126,7 +125,7 @@ const Generator = ({ selectedItem }) => {
               <ColorPicker
                 disabledAlpha
                 showText
-                defaultValue="#000000"
+                defaultValue={strokeColor}
                 onChangeComplete={(color) =>
                   setStrokeColor(color.toHexString())
                 }
@@ -143,6 +142,7 @@ const Generator = ({ selectedItem }) => {
                   style={{ width: "8rem" }}
                   min={0}
                   max={30}
+                  defaultValue={strokeWidth}
                   onChangeComplete={(e) => setStrokeWidth(e)}
                 />
               </div>
@@ -157,6 +157,7 @@ const Generator = ({ selectedItem }) => {
                 <Switch
                   size="small"
                   defaultChecked={false}
+                  defaultValue={strokeDashed}
                   onChange={(checked) => setStrokeDashed(checked)}
                 />
               </div>

@@ -1,0 +1,9 @@
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.prompt {
+    text-align: center;
+    margin-block: 1rem;
+    font-family: 'Comic Sans MS', sans-serif;
+}
