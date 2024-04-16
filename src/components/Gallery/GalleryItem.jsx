@@ -6,7 +6,7 @@ const GalleryItem = ({ data, onSelectItem }) => {
   const [random, setRandom] = useState(0);
 
   const togglePlay = () => {
-    onSelectItem(word);
+    // onSelectItem(word);
     setRandom(Math.random());
   };
 
