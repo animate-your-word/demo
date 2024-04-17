@@ -2,7 +2,7 @@ import Gallery from "./components/Gallery";
 import Playground from "./components/Playground";
 import ZoomableSVG from "./components/Playground/ZoomableSVG";
 import Comparison from "./components/Comparison";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button, Row, Col } from "antd";
 import { FilePdfOutlined, GithubOutlined } from "@ant-design/icons";
 
@@ -17,6 +17,11 @@ function App() {
     "Comparison",
   ];
   const [selectedGalleryItem, setSelectedGalleryItem] = useState(null);
+  const vidRef = useRef();
+
+  useEffect(() => {
+    vidRef.current.currentTime = 1;
+  }, []);
 
   return (
     <>
@@ -107,6 +112,7 @@ function App() {
         <div className="content">
           <video
             src={`${import.meta.env.BASE_URL}dynamic_typography.mp4`}
+            ref={vidRef}
             controls
             autoPlay
             style={{ width: "100%" }}
