@@ -88,6 +88,7 @@ function App() {
               size="large"
               icon={<FilePdfOutlined />}
               style={{ marginInline: "0.5rem" }}
+              href="https://arxiv.org/abs/2404.11614"
             >
               paper
             </Button>
@@ -232,6 +233,18 @@ function App() {
           </div>
         </div>
 
+        <div className="content">
+          <h2 className="title">Bibtex</h2>
+          <div className="gray-bg" style={{ padding: "0.5rem 1rem", overflow: "scroll" }}>
+            <pre>
+              <code style={{overflow: "scroll"}}>
+                {
+                  "@article{liu2024dynamic, \n\ttitle={Dynamic Typography: Bringing Words to Life}, \n\tauthor={Zichen Liu and Yihao Meng and Hao Ouyang and Yue Yu and Bolin Zhao and Daniel Cohen-Or and Huamin Qu}, \n\tyear={2024}, \n\teprint={2404.11614}, \n\tarchivePrefix={arXiv}, \n\tprimaryClass={cs.CV}}"
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
         <br />
         <br />
         <hr className="divider" />
