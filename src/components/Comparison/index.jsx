@@ -6,7 +6,7 @@ import "./index.css";
 
 const Comparison = () => {
   const wordList = ["CAMEL", "GYM", "PASSION", "SWAN", "TELESCOPE"];
-  const modelList = ["input","Gen-2",  "DynamiCrafter", "LiveSketch", "Ours"];
+  const modelList = ["input", "Gen-2", "DynamiCrafter", "LiveSketch", "Ours"];
   const promptList = [
     "A camel walks steadily across the desert",
     "A man doing exercise by lifting two dumbbells in both hands",
@@ -44,12 +44,19 @@ const Comparison = () => {
               <div className="prompt">{promptList[idx]}</div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
                 {modelList.map((model, mIdx) => (
-                  <div key={mIdx}>
+                  <div
+                    key={mIdx}
+                    style={{
+                      width: "20%",
+                      padding: "2%",
+                      boxSizing: "border-box",
+                    }}
+                  >
                     <div style={{ position: "relative" }}>
                       <img
                         style={{
-                          width: "10vw",
-                          height: "10vw",
+                          width: "100%",
+                          height: "100%",
                           border: "1px solid gray",
                         }}
                         src={`${
@@ -65,17 +72,19 @@ const Comparison = () => {
                           }comparison/${word}_input_img.png`}
                           style={{
                             position: "absolute",
-                            bottom: "-1rem",
-                            right: "-1rem",
-                            width: "4vw",
-                            height: "4vw",
+                            bottom: "-10%",
+                            right: "-10%",
+                            width: "40%",
+                            height: "40%",
                             border: "1px solid gray",
                           }}
                         />
                       )}
                     </div>
 
-                    <div style={{ textAlign: "center", marginTop: "1rem" }}>{model}</div>
+                    <div style={{ textAlign: "center", marginTop: "1rem", whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
+                      {model}
+                    </div>
                   </div>
                 ))}
               </div>
