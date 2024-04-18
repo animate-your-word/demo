@@ -28,7 +28,7 @@ function App() {
       <div style={{ margin: "auto" }}>
         <div className="content">
           <h1 className="title-primary">
-            Dynamic Typography: Bringing Words to Life
+            Dynamic Typography: Bringing Words to Life via Video Diffusion Prior
           </h1>
           <div className="authors">
             <div>
