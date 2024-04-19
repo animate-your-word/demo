@@ -28,7 +28,7 @@ function App() {
       <div style={{ margin: "auto" }}>
         <div className="content">
           <h1 className="title-primary">
-            Dynamic Typography: Bringing Words to Life via Video Diffusion Prior
+            Dynamic Typography: Bringing Text to Life via Video Diffusion Prior
           </h1>
           <div className="authors">
             <div>
@@ -239,7 +239,7 @@ function App() {
             <pre>
               <code style={{overflow: "scroll"}}>
                 {
-                  "@article{liu2024dynamic, \n\ttitle={Dynamic Typography: Bringing Words to Life}, \n\tauthor={Zichen Liu and Yihao Meng and Hao Ouyang and Yue Yu and Bolin Zhao and Daniel Cohen-Or and Huamin Qu}, \n\tyear={2024}, \n\teprint={2404.11614}, \n\tarchivePrefix={arXiv}, \n\tprimaryClass={cs.CV}}"
+                  "@article{liu2024dynamic, \n\ttitle={Dynamic Typography: Bringing Text to Life via Video Diffusion Prior}, \n\tauthor={Zichen Liu and Yihao Meng and Hao Ouyang and Yue Yu and Bolin Zhao and Daniel Cohen-Or and Huamin Qu}, \n\tyear={2024}, \n\teprint={2404.11614}, \n\tarchivePrefix={arXiv}, \n\tprimaryClass={cs.CV}}"
                 }
               </code>
             </pre>
