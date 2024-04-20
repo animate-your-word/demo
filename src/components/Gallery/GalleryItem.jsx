@@ -1,14 +1,7 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
-const GalleryItem = ({ data, onSelectItem }) => {
+const GalleryItem = ({ data }) => {
   const { file, word, optimized_letter, caption } = data;
-  const [random, setRandom] = useState(0);
-
-  const togglePlay = () => {
-    // onSelectItem(word);
-    setRandom(Math.random());
-  };
 
   return (
     <div style={{ position: "relative" }} className="gallery-item">
@@ -16,19 +9,18 @@ const GalleryItem = ({ data, onSelectItem }) => {
         {word.split("").map((letter, idx) => {
           if (letter === optimized_letter) {
             return (
-              <span style={{ fontWeight: "bold" }} key={idx}>
+              <span style={{ fontWeight: 600, fontSize: "1.2rem" }} key={idx}>
                 {letter}
               </span>
             );
           } else {
-            return <span key={idx}>{letter}</span>;
+            return <span  style={{ fontSize: "1rem" }} key={idx}>{letter}</span>;
           }
         })}
       </div>
       <img
-        src={`${import.meta.env.BASE_URL}gallery/${file}?${random}`}
+        src={`${import.meta.env.BASE_URL}gallery/loop_${file}`}
         alt={word}
-        onClick={togglePlay}
         autoPlay={true}
         className="item-image"
       />
@@ -38,8 +30,7 @@ const GalleryItem = ({ data, onSelectItem }) => {
 };
 
 GalleryItem.propTypes = {
-  data: PropTypes.object.isRequired,
-  onSelectItem: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default GalleryItem;

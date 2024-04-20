@@ -2,7 +2,7 @@ import Gallery from "./components/Gallery";
 import Playground from "./components/Playground";
 import ZoomableSVG from "./components/Playground/ZoomableSVG";
 import Comparison from "./components/Comparison";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Button, Row, Col } from "antd";
 import { FilePdfOutlined, GithubOutlined } from "@ant-design/icons";
 
@@ -16,7 +16,6 @@ function App() {
     "Why SVG?",
     "Comparison",
   ];
-  const [selectedGalleryItem, setSelectedGalleryItem] = useState(null);
   const vidRef = useRef();
 
   useEffect(() => {
@@ -154,7 +153,7 @@ function App() {
         </div>
 
         <div className="content">
-          <Gallery onSelectItem={setSelectedGalleryItem} />
+          <Gallery />
         </div>
 
         <div className="gray-bg">
@@ -177,7 +176,7 @@ function App() {
               </Col>
               <Col lg={13} md={24}>
                 <div className="text">
-                  <Playground selectedItem={selectedGalleryItem} />
+                  <Playground />
                   <div style={{ textAlign: "center" }}>
                     🪄 You can freely adjust the SVG to create your own
                     animation!
@@ -235,9 +234,12 @@ function App() {
 
         <div className="content">
           <h2 className="title">Bibtex</h2>
-          <div className="gray-bg" style={{ padding: "0.5rem 1rem", overflow: "scroll" }}>
+          <div
+            className="gray-bg"
+            style={{ padding: "0.5rem 1rem", overflow: "scroll" }}
+          >
             <pre>
-              <code style={{overflow: "scroll"}}>
+              <code style={{ overflow: "scroll" }}>
                 {
                   "@article{liu2024dynamic, \n\ttitle={Dynamic Typography: Bringing Text to Life via Video Diffusion Prior}, \n\tauthor={Zichen Liu and Yihao Meng and Hao Ouyang and Yue Yu and Bolin Zhao and Daniel Cohen-Or and Huamin Qu}, \n\tyear={2024}, \n\teprint={2404.11614}, \n\tarchivePrefix={arXiv}, \n\tprimaryClass={cs.CV}}"
                 }
