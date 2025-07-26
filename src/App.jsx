@@ -29,9 +29,10 @@ function App() {
           <h1 className="title-primary">
             Dynamic Typography: Bringing Text to Life via Video Diffusion Prior
           </h1>
-          <h2 className="title">
-            ICCV 2025
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <h2 className="title">ICCV 2025</h2>
+            <div className="award-outer"><div className="award">Oral</div></div>
+          </div>
           <div className="authors">
             <div>
               <a href="https://zliucz.github.io/">Zichen Liu</a>

@@ -50,3 +50,23 @@ a {
     margin-inline: 0.5rem;
     margin-block: 0.3rem;
 }
+
+.award-outer {
+    padding: 2px;
+    border-radius: 0.2rem;
+    background: linear-gradient(to bottom right, #EAC925, #D89810, #DCB319);
+    display: inline-flex;
+    vertical-align: middle;
+    margin-inline: 1rem;
+}
+
+.award-outer .award {
+    padding: 0.02rem 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    background-color: #E3B71A;
+    color: white;
+    margin: auto;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
