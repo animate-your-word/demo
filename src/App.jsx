@@ -31,7 +31,8 @@ function App() {
           </h1>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <h2 className="title">ICCV 2025</h2>
-            <div className="award-outer"><div className="award">Oral</div></div>
+            <div className="award-outer">Best Paper Finalist</div>
+            <div style={{fontSize: "1.2rem"}}>& Oral</div>
           </div>
           <div className="authors">
             <div>

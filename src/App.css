@@ -52,21 +52,43 @@ a {
 }
 
 .award-outer {
-    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.6rem;
+    background: #E3B71A;
     border-radius: 0.2rem;
-    background: linear-gradient(to bottom right, #EAC925, #D89810, #DCB319);
-    display: inline-flex;
-    vertical-align: middle;
+    color: #F3F3F3;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     margin-inline: 1rem;
 }
 
-.award-outer .award {
-    padding: 0.02rem 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0.1rem;
-    background-color: #E3B71A;
-    color: white;
-    margin: auto;
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+.award-outer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.award-outer:hover::before {
+    left: 100%;
+}
+
+.award-outer:hover {
+    background: #D4A017;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    color: #F3F3F3;
 }
